@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alecks Joseph Plegaria Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="inner-con">
+            <div class="left-pane">
+                <div class="header"></div>
+                <h1>Alecks Joseph F. Plegaria</h1>
+                <h2>Pega Developer at YMGIT PH</h2>
+                <p>I build Pega applications for huge companies.</p>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="">Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right-pane">
+                <div id="about" class="header"></div>
+                <p >Back in 2016, I decided to try coding and web development. After months of coding I finished first project for Educational Purposes.
+                   Fast-forward to today, I passed the certifications of PEGA which is the <span class="bold-text"><b>SYSTEM ARCHTECT</b></span> and <span class="bold-text"><b>PEGA SENIOR SYSTEM ARCHTECT</b></span> 
+                   now I’ve had the privilege of building pega applications for huge corporations and Businesses.
+                </p>
+                <p>
+                    My main focus as of now is to study front-end technologies, and how 2 application built in different technologies can communicate each other
+                    through the use of API integration.
+                </p>
+                <p class="during">
+                    During my freetime I'm playing basketball, computer games and sometimes do camping together with friends. 
+                </p>
+                <div class="experience" id="experience">
+                    <div class="left-exp">
+                        <h5>September 2022 - Present</h5>
+                    </div>
+                    <div class="right-exp">
+                        <h3>Junior Software Developer (PEGA) at YMGIT PH</h3>
+                        <h5>Work as a Pega Developer to build BPM applications. Collaborate with the team on how to implement the requirements base on the SOP of the company.</h5>
+                        <h5>Working with the team to deliver accurate and fast pega applications by the use of ootb rules in pega.</h5>
+                        <span><button class="tech">PEGA</button><button class="tech">HTML</button><button class="tech">CSS</button><button class="tech">REACT JS</button><button class="tech">MYSQL</button></span>
+                    </div>
+                </div>
+                <div class="experience" id="experience">
+                    <div class="left-exp">
+                        <h5>October 2019 - June 2022</h5>
+                    </div>
+                    <div class="right-exp">
+                        <h3>Research Associate at Sourcefit PH</h3>
+                        <h5>Scrape Data from websites, verify if all gathered data is accurate.</h5>
+                        <h5>Working with co-workers to remove unneccesary data has been acquired by team.</h5>
+                        <span><button class="tech">Data Scraping</button><button class="tech">HUBUCO</button><button class="tech">MOZ</button></span>
+                    </div>
+                </div>
+                <div class="experience" id="experience">
+                    <div class="left-exp">
+                        <h5>November 2018 - April 2019</h5>
+                    </div>
+                    <div class="right-exp">
+                        <h3>HTML Specialist (EDGAR) at DG3 Manila</h3>
+                        <h5>Conversion of PDF files to HTML and CSS. Working with team for proper implementations of assigned task</h5>
+                        <h5>Collaborate with the Proofreading team, implement changes marked as wrong by ProofReader.</h5>
+                        <span><button class="tech">HTML</button><button class="tech">CSS</button></span>
+                    </div>
+                </div>
+                <div class="experience" id="experience">
+                    <div class="left-exp">
+                        <h5>November 2017 - February 2018</h5>
+                    </div>
+                    <div class="right-exp">
+                        <h3>Intern Software Developer at Anderson Group</h3>
+                        <h5>Maintain existing application developed by previous interns. Implementations of features suggested by the managers.</h5>
+                        <h5>Work as a team leader managing 3 interns, teach them how are the proper implementations of features via coding</h5>
+                        <span><button class="tech">ASP.net</button><button class="tech">HTML</button><button class="tech">CSS</button><button class="tech">Angular JS</button>
+                            <button class="tech">MSSQL</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="cursor"></div>
+        </div>
+    </div>
+    <script>
+        const cursor = document.querySelector('.cursor');
+        
+        document.addEventListener('mousemove', (e) => {
+            
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        })
+
+        
+    </script>
+</body>
+</html>

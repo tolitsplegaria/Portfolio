@@ -1,0 +1,170 @@
+*, html {
+
+    scroll-behavior: smooth !important;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+}
+
+p{
+    color: #abb6c9;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    height: 100vh;
+    width: auto;
+    background-color: #0f182c;
+    position: relative;
+}
+
+.inner-con{
+    background-color: white;
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.inner-con .left-pane{
+    background: #0f182c;
+    height: 100vh;
+    width: 50%;
+    position: fixed;
+}
+.inner-con .right-pane{
+    background: #0f182c;
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    overflow: auto;
+}
+.right-pane .during{
+    margin-bottom: 150px;
+}
+
+
+.inner-con .right-pane::-webkit-scrollbar{
+    display: none;
+}
+
+.inner-con .header{
+    width: auto;
+    height: 20vh;
+    background-color: #0f182c;
+}
+
+nav{
+    margin-top: 110px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    margin-bottom: 7px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #abb6c9;
+    position: relative;
+}
+
+nav ul li a:before{
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: -110%;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    border-radius: 50px;
+    transition: width 0.5s ease;
+    color: white;
+}
+
+
+nav ul li a:hover:before{
+    width: 100%;
+    color: white;
+}
+
+
+.right-pane .experience{
+    display: flex;
+    padding: 0 10px 17px 10px;
+    margin-bottom: 70px;
+}
+
+.right-pane .experience:hover{
+    transition: 0.5s;
+    border-radius: 10px;
+    background-color: #16223b;
+}
+
+.right-pane .experience .left-exp{
+    width: 25%;
+    background-color: transparent;
+    height: auto;
+    border-radius: 10px 0 0 10px;
+    color: white;
+}
+
+
+.right-pane .experience .right-exp{
+    width: 75%;
+    background-color: transparent;
+    height: auto;
+    border-radius: 0 10px 10px 0;
+}
+
+
+.right-pane .experience .left-exp h5 {
+    color: #abb6c9;
+    font-size: 13px;
+}
+
+.right-pane .experience .right-exp h5{
+    color: #abb6c9;
+    font-size: 13px;
+}
+
+.right-pane .experience .right-exp .tech{
+    border-radius: 20px;
+    border: none;
+    margin-right: 7px;
+    color: white;
+    background-color: #18354c;
+    padding: 3px 10px;
+}
+
+.right-pane .bold-text{
+    color: white;
+}
+
+.right-pane p{
+    line-height: 22px;
+}
+
+/*  .cursor{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: repeating-radial-gradient(#101d3d, #8f9eba,#101d3d);
+    transform: translate(-200%,-50%);
+    overflow: auto;
+} */
